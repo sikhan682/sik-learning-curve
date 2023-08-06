@@ -1,5 +1,5 @@
 {
-	"globalDotEnv": ["./**/.env"],
+	"globalDotEnv": [".env"],
 	"pipeline": {
 		"yt": {},
 		"yta": {},

@@ -1,4 +1,7 @@
-module.exports = {
+/** @type {import('eslint').Linter.Config} */
+const config = {
+
+
   root: true,
   env: { browser: true, es2020: true },
   extends: [
@@ -16,3 +19,5 @@ module.exports = {
     ],
   },
 }
+
+module.exports =config

@@ -1,5 +1,5 @@
 ### MY LEARNING CURVE IN 1 ONE YEAR FROM HTML TO AWS CLOUD IN 1 REPO
-
+✓ ☓ ❖
 ## TURBO REPO DETAIL
 ...
 1. 	ViteJS Front & MERN Backend App (facebook) (udemy Course)
