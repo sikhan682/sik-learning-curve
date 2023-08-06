@@ -13,7 +13,7 @@ coverage
 out/
 build
 .dist
-pnpm-lock-yaml
+
 
 # misc
 .DS_Store
