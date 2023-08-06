@@ -1,12 +1,13 @@
 packages:
-  - config/*
+  - client/*
   - config/*
   - db/*
   - library/*
   - mobile/*
+  - nextjs/*
   - server/*
   - services/*
-  - web/*
+  - sik/*
   
   
   

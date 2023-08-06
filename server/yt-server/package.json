@@ -1,0 +1,36 @@
+{
+	"name": "@sik/yt-server",
+	"version": "0.1.0",
+	"private": true,
+	"engines": {
+		"node": "18.17.0"
+	},
+	"scripts": {
+		"start": "node server",
+		"dev": "nodemon server",
+		"build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored server/src",
+		"generate": "prisma generate",
+		"studio": "prisma studio"
+	},
+	"dependencies": {
+		"@prisma/client": "5.1.1",
+		"cookie-parser": "^1.4.6",
+		"cors": "^2.8.5",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"express-async-errors": "^3.1.1",
+		"google-auth-library": "^9.0.0",
+		"jsonwebtoken": "^9.0.1",
+		"loglevel": "^1.8.1",
+		"morgan": "^1.10.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.22.9",
+		"@babel/core": "^7.22.9",
+		"@babel/preset-env": "^7.22.9",
+		"@babel/register": "^7.22.5",
+		"concurrently": "^8.2.0",
+		"nodemon": "^3.0.1",
+		"prisma": "^5.1.1"
+	}
+}

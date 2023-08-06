@@ -29,9 +29,8 @@
 		"react-refresh": "~0.14.0"
 	},
 	"scripts": {
-		"dev": "turbo run dev --parallel --no-daemon",
-		"web": "turbo run dev --parallel --no-daemon --filter @sik/yt",
-		"mobile": "turbo run android --parallel --no-daemon --filter @sik/native",
+		"yta": "turbo run dev --filter @sik/yt-app --no-daemon",
+		"yt": "concurrently \"turbo run dev --filter @sik/yt-client\" \"turbo run dev --filter @sik/yt-server\" --parallel --no-daemon",
 		"lint": "turbo run lint"
 	},
 	"dependencies": {
@@ -39,7 +38,7 @@
 		"concurrently": "^8.2.0",
 		"turbo": "^1.10.12",
 		"typescript": "^5.1.6",
-		"@sik/prettier":"0.0.1",
-		"@sik/eslint":"0.0.1"
+		"@sik/prettier": "0.0.1",
+		"@sik/eslint": "0.0.1"
 	}
 }
