@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from "react";
-import Button from "../styles/Button";
+import Button from "../styles/shared/button";
 import Wrapper from "../styles/ChannelInfo";
 
 function ChannelInfo() {
