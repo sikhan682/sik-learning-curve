@@ -1,0 +1,23 @@
+{
+  "name": "@sik/tailwind",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "index.ts",
+    "postcss.js"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.27",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-animate": "^1.0.6"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss-radix": "^2.8.0"
+  }
+}
