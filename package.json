@@ -1,0 +1,45 @@
+{
+	"name": "sik-learning-curve",
+	"version": "0.0.1",
+	"private": true,
+	"license": "MIT",
+	"author": {
+		"name": "Shahid Iqbal Khan",
+		"url": "https://twitter.com/sikhan682"
+	},
+	"engines": {
+		"pnpm": ">=8.6.12",
+		"node": ">=18.17.0"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@babel/*",
+				"expo-modules-*",
+				"typescript"
+			]
+		}
+	},
+	"modulePathIgnorePatterns": [
+		"<rootDir>[/\\\\](build|docs|node_modules|deploy|scripts|.vercel|output)[/\\\\]"
+	],
+	"type": "module",
+	"resolutions": {
+		"metro": "0.72.3",
+		"react-refresh": "~0.14.0"
+	},
+	"scripts": {
+		"dev": "turbo run dev --parallel --no-daemon",
+		"web": "turbo run dev --parallel --no-daemon --filter @sik/yt",
+		"mobile": "turbo run android --parallel --no-daemon --filter @sik/native",
+		"lint": "turbo run lint"
+	},
+	"dependencies": {
+		"@manypkg/cli": "^0.21.0",
+		"concurrently": "^8.2.0",
+		"turbo": "^1.10.12",
+		"typescript": "^5.1.6",
+		"@sik/prettier":"0.0.1",
+		"@sik/eslint":"0.0.1"
+	}
+}

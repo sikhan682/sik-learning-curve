@@ -1,0 +1,12 @@
+packages:
+  - config/*
+  - config/*
+  - db/*
+  - library/*
+  - mobile/*
+  - server/*
+  - services/*
+  - web/*
+  
+  
+  

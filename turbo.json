@@ -1,0 +1,51 @@
+{
+  "globalDotEnv": [".env"],
+  "pipeline": {
+    
+  
+    "lint": {
+      "cache": false,
+      "outputs": []
+    },
+    "lint:fix": {
+      "cache": false,
+      "outputs": []
+    },
+    "format:check": {
+      "cache": false,
+      "outputs": []
+    },
+    "format:write": {
+      "cache": false,
+      "outputs": []
+    },
+    "typecheck": {},
+    "dev": {
+      "cache": false
+    },
+    "check": {
+      "cache": false
+    },    
+     "//#clean": {
+      "cache": false
+     },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**","node_modules/.cache/metro/**"]
+    },
+    "preview": {
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "start": {
+      "dependsOn": ["^build"]
+    },
+    
+    "test": {
+      "cache": false,
+      "outputs": []
+    }
+    
+
+},
+"globalEnv": ["NODE_ENV"]
+} 
